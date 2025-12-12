@@ -17,14 +17,12 @@ class MartingaleMACDSpotStrategy:
         self.store = StateStore(settings)
         self.ledger = TradeLedger(settings)
         self.state = self.store.load()
-        print("b11", self.state.base_amount)
         self._ohlcv_cache: List[List[float]] = []
         self._ohlcv_limit = 200
         self._timeframe = "5m"
         self._baseline_cache: float = 0.0
         self._baseline_last_ts: float = 0.0
         self._bootstrap_state()
-        print("b1", self.state.base_amount)
 
     def _get_latest_price(self) -> float:
         t = self.exchange.fetch_ticker(self.symbol)
@@ -289,19 +287,13 @@ class MartingaleMACDSpotStrategy:
     def run(self):
         while True:
             try:
-                print("a1",self.state.base_amount)
                 self._refresh_state_from_balance()
-                print("a2",self.state.base_amount)
                 baseline = self._get_cached_baseline()
-                print("a3",self.state.base_amount)
                 self._update_ohlcv_cache()
-                print("a4",self.state.base_amount)
                 closes = np.array([c[4] for c in self._ohlcv_cache], dtype=float) if self._ohlcv_cache else np.array([], dtype=float)
-                print("a5",self.state.base_amount)
                 golden_cross = macd_cross_golden(closes) if closes.size > 0 else False
-                print("a6",self.state.base_amount)
                 last_price = self._get_latest_price()
-                print(self.state.base_amount)
+                self.logger.info(f"state:{self.state}")
                 self._initial_buy_if_needed(last_price, baseline)
                 self._martingale_buy_if_needed(last_price, golden_cross)
                 self._take_profit_if_needed(last_price)
