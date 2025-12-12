@@ -1,0 +1,9 @@
+2025-12-12 01:32:24,547 INFO BUY-LIMIT ETH/USDT price=3194.761820 amount=0.00031301 pos=0.00031301 pnl=0.00000
+2025-12-12 01:35:50,919 INFO BUY-LIMIT ETH/USDT price=3189.174615 amount=0.00031356 pos=0.00031356 pnl=0.00000
+2025-12-12 01:50:27,623 INFO PLACE BUY-LIMIT ETH/USDT price=3180.888760 amount=0.00031438 order_id=3119657183702016000
+2025-12-12 01:51:00,725 INFO PLACE BUY-LIMIT ETH/USDT price=3180.199105 amount=0.00031445 order_id=3119658293883953152
+2025-12-12 10:21:41,693 INFO PLACE SELL-LIMIT ETH/USDT price=3250.984680 amount=0.00062750 order_id=3120686378896973826
+2025-12-12 10:22:14,698 ERROR okx amount of ETH/USDT must be greater than minimum amount precision of 0.000001
+2025-12-12 10:22:47,799 ERROR okx amount of ETH/USDT must be greater than minimum amount precision of 0.000001
+2025-12-12 10:23:20,734 ERROR okx amount of ETH/USDT must be greater than minimum amount precision of 0.000001
+2025-12-12 10:52:51,874 ERROR okx {"code":"1","data":[{"clOrdId":"6b9ad766b55dBCDE10f3075ed527aca3","ordId":"","sCode":"51008","sMsg":"Order failed. Your available ETH balance is insufficient, and your available margin (in USD) is too low for borrowing. ","tag":"6b9ad766b55dBCDE","ts":"1765507971729"}],"inTime":"1765507971729018","msg":"All operations failed","outTime":"1765507971730291"}
