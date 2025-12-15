@@ -1,6 +1,7 @@
 import datetime
 import numpy as np
-from typing import List
+from typing import List, Any
+
 try:
     import talib
 except Exception:
@@ -16,7 +17,7 @@ def macd_cross_golden(closes: np.ndarray) -> bool:
         signal = _ema(macd, 9)
     if len(macd) < 2 or len(signal) < 2:
         return False
-    return macd[-2] <= signal[-2] and macd[-1] > signal[-1]
+    return bool(macd[-2] <= signal[-2] and macd[-1] > signal[-1])
 
 def _ema(arr: np.ndarray, period: int) -> np.ndarray:
     alpha = 2.0 / (period + 1)

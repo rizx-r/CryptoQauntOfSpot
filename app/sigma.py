@@ -1,12 +1,10 @@
-import os
-import time
 import sys
 from pathlib import Path
 sys.path.append(str(Path(__file__).resolve().parents[1]))
 from config.settings import Settings
 from utils.logging import init_logger
 from core.exchange_factory import ExchangeFactory
-from strategie.martingale_macd_spot import MartingaleMACDSpotStrategy
+from strategie.sigma_spot import SigmaSpotStrategy
 
 def main():
     settings = Settings()
@@ -27,12 +25,11 @@ def main():
         timeout_ms=settings.timeout_ms,
         simulated_env=settings.simulated_env,
     )
-    strategy = MartingaleMACDSpotStrategy(
+    strategy = SigmaSpotStrategy(
         exchange=exchange,
         settings=settings,
         logger=logger,
     )
-    print(strategy.state.base_amount)
     strategy.run()
 
 if __name__ == "__main__":

@@ -17,4 +17,8 @@ def init_logger(settings: Settings):
     if not logger.handlers:
         logger.addHandler(fh)
         logger.addHandler(ch)
+    # if not any(isinstance(h, RotatingFileHandler) for h in logger.handlers):
+    #     logger.addHandler(fh)
+    # if not any(isinstance(h, logging.StreamHandler) for h in logger.handlers):
+    #     logger.addHandler(ch)
     return logger

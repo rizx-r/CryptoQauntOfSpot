@@ -9,6 +9,8 @@ from config.settings import Settings
 class PositionState:
     base_amount: float = 0.0
     avg_cost: float = 0.0
+    last_buy_ms: int = 0
+    buy_count: int = 0
 
 class StateStore:
     def __init__(self, settings: Settings):
@@ -25,7 +27,9 @@ class StateStore:
                 d = json.load(f)
                 base_amount = float(d.get("base_amount", 0.0))
                 avg_cost = float(d.get("avg_cost", 0.0))
-                return PositionState(base_amount=base_amount, avg_cost=avg_cost)
+                last_buy_ms = int(d.get("last_buy_ms", 0) or 0)
+                buy_count = int(d.get("buy_count", 0) or 0)
+                return PositionState(base_amount=base_amount, avg_cost=avg_cost, last_buy_ms=last_buy_ms, buy_count=buy_count)
         except Exception:
             state = PositionState()
             self.save(state)

@@ -1,0 +1,32 @@
+2025-12-16 00:07:20,282 INFO state:PositionState(base_amount=0.0, avg_cost=0.0, last_buy_ms=0, buy_count=0)
+2025-12-16 00:07:36,008 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0)
+2025-12-16 00:07:36,009 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:07:36,009 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 3009.71 >= 3029.591018518519 * (1.0 + 0.01))', False)
+2025-12-16 00:08:08,929 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0)
+2025-12-16 00:08:08,930 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:08:08,930 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 3011.85 >= 3029.591018518519 * (1.0 + 0.01))', True)
+2025-12-16 00:31:01,045 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:31:01,122 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 3001.12 >= 3029.591018518519 * (1.0 + 0.01))', True)
+2025-12-16 00:31:01,861 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=3001.120000 pnl_ratio=-0.009398 pnl_amount=-0.012290 usdt_free=1.59
+2025-12-16 00:31:33,794 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:31:33,794 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 2999.21 >= 3029.591018518519 * (1.0 + 0.01))', True)
+2025-12-16 00:31:34,277 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=2999.210000 pnl_ratio=-0.010028 pnl_amount=-0.013114 usdt_free=1.59
+2025-12-16 00:32:06,553 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:32:06,553 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 2994.7 >= 3029.591018518519 * (1.0 + 0.01))', True)
+2025-12-16 00:32:07,030 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=2994.700000 pnl_ratio=-0.011517 pnl_amount=-0.015061 usdt_free=1.59
+2025-12-16 00:32:39,288 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:32:39,288 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 2995.8 >= 3029.591018518519 * (1.0 + 0.01))', True)
+2025-12-16 00:32:39,839 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=2995.800000 pnl_ratio=-0.011154 pnl_amount=-0.014586 usdt_free=1.59
+2025-12-16 00:33:06,698 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:33:06,698 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 2995.74 >= 3029.591018518519 * (1.0 + 0.01))', False)
+2025-12-16 00:33:07,167 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=2995.740000 pnl_ratio=-0.011173 pnl_amount=-0.014612 usdt_free=1.59
+2025-12-16 00:33:34,372 INFO 1
+2025-12-16 00:33:36,577 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:33:36,578 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 2995.44 >= 3029.591018518519 * (1.0 + 0.01))', False)
+2025-12-16 00:33:37,061 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=2995.440000 pnl_ratio=-0.011272 pnl_amount=-0.014741 usdt_free=1.59
+2025-12-16 00:34:04,115 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:34:04,116 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 2995.67 >= 3029.591018518519 * (1.0 + 0.01))', True)
+2025-12-16 00:34:04,879 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=2995.670000 pnl_ratio=-0.011197 pnl_amount=-0.014642 usdt_free=1.59
+2025-12-16 00:34:36,794 INFO cant buy: (True, True, 'False if 200 > 0 else False', True)
+2025-12-16 00:34:36,794 INFO cant sell: (True, '(3029.591018518519 > 0.0 and 2995.52 >= 3029.591018518519 * (1.0 + 0.01))', True)
+2025-12-16 00:34:37,266 INFO state:PositionState(base_amount=0.0004316544, avg_cost=3029.591018518519, last_buy_ms=0, buy_count=0) price=2995.520000 pnl_ratio=-0.011246 pnl_amount=-0.014707 usdt_free=1.59

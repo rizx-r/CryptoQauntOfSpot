@@ -26,6 +26,13 @@ class Settings:
     order_type: str = os.getenv("ORDER_TYPE", "market").lower()  # market or limit
     limit_slippage_pct: float = float(os.getenv("LIMIT_SLIPPAGE_PCT", "0.0005"))
     reset_state_on_start: bool = os.getenv("RESET_STATE_ON_START", "false").lower() == "true"
+    sigma_buy_base_eth: float = float(os.getenv("SIGMA_BUY_BASE_ETH", "0.000003"))
+    sigma_max_adds: int = int(os.getenv("SIGMA_MAX_ADDS", "100"))
+    sigma_buy_cooldown_sec: int = int(os.getenv("SIGMA_BUY_COOLDOWN_SEC", "180"))
+    sigma_buy_price_drop_pct: float = float(os.getenv("SIGMA_BUY_PRICE_DROP_PCT", "0.0025"))
+    sigma_sell_profit_pct: float = float(os.getenv("SIGMA_SELL_PROFIT_PCT", "0.01"))
+    sigma_sell_leave_base_eth: float = float(os.getenv("SIGMA_SELL_LEAVE_BASE_ETH", "0.000003"))
+    sigma_macd_timeframe: str = os.getenv("SIGMA_MACD_TIMEFRAME", "1m")
 
     def __post_init__(self):
         print(self.testnet)

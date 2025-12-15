@@ -6,7 +6,7 @@ import time
 from core.exchange_base import IExchange
 from config.settings import Settings
 from utils.logging import init_logger
-from strategies.martingale_macd_spot import MartingaleMACDSpotStrategy
+from strategie.martingale_macd_spot import MartingaleMACDSpotStrategy
 
 class DummyExchange(IExchange):
     def __init__(self):
